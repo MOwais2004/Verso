@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light only">
+<title>Verso — AI that runs the picture desk</title>
+<meta name="description" content="Verso reads every photograph in your archive and writes it down, so it answers to a sentence.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#F7F5F0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navrow">
+  <nav class="nav">
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="3.3" fill="currentColor"/></svg>
+      Verso
+    </a>
+    <a class="l" href="#does">What it does</a>
+    <a class="l" href="#works">How it works</a>
+    <a class="l" href="#find">Search</a>
+    <a class="l" href="#faq">FAQ</a>
+    <a class="go" href="#access">Get started</a>
+  </nav>
+</div>
+
+<!-- 01 hero ─────────────────────────────────────────── -->
+<header class="hero" id="top">
+  <div class="stage" id="stage">
+    <div class="film">
+      <img id="film"
+           src="assets/hero-1800.webp"
+           srcset="assets/hero-1200.webp 1200w,
+                   assets/hero-1800.webp 1800w,
+                   assets/hero-2400.webp 2400w"
+           sizes="100vw" fetchpriority="high" decoding="async"
+           alt="A photographer at the window, between setups">
+    </div>
+    <div class="shade"></div>
+    <div class="hero-in">
+      <span class="live up"><i></i>Reading 40,112 frames right now</span>
+      <h1>
+        <span class="rise"><span>You’re a photographer.</span></span>
+        <span class="rise late"><span><em>Not a librarian.</em></span></span>
+      </h1>
+      <p class="sub up l2">Let Verso describe your archive</p>
+    </div>
+    <div class="capture-row up l3">
+      <form class="capture" onsubmit="return false">
+        <input type="email" placeholder="Your email" aria-label="Your email">
+        <button class="btn light" type="submit">Get started</button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<!-- 02 marks ────────────────────────────────────────── -->
+<div class="marks">
+  <div class="wrap"><p class="mono up">Trusted by 400+ studios and picture desks</p></div>
+  <div class="rail" id="rail">
+    <span>Nordlys</span><span>Two Rivers</span><span>Halcyon</span><span>Field &amp; Frame</span>
+    <span>Atelier Nine</span><span>Kvist</span><span>Table Set</span>
+    <span aria-hidden="true">Nordlys</span><span aria-hidden="true">Two Rivers</span>
+    <span aria-hidden="true">Halcyon</span><span aria-hidden="true">Field &amp; Frame</span>
+    <span aria-hidden="true">Atelier Nine</span><span aria-hidden="true">Kvist</span><span aria-hidden="true">Table Set</span>
+  </div>
+</div>
+
+<!-- 03 what it does ─────────────────────────────────── -->
+<section id="does">
+  <div class="wrap">
+    <div style="max-width:760px">
+      <span class="mono up" style="display:block;margin-bottom:22px">01 — What it does</span>
+      <h2>
+        <span class="rise"><span>AI that runs</span></span>
+        <span class="rise late"><span>the picture desk</span></span>
+      </h2>
+      <p class="lead up l2" style="margin-top:26px">Verso looks at every frame, writes down what is in it, and keeps that description on the file — so the archive answers to a sentence instead of a folder name.</p>
+    </div>
+
+    <div style="margin-top:clamp(42px,5vw,88px)">
+      <article class="row up">
+        <div class="txt">
+          <span class="mono n">Ø1 / Describe</span>
+          <h3>It writes down what the picture is</h3>
+          <p class="body">Subject, light, location and lens, in the words you would have used yourself. Nine hundred frames from one setup collapse to the six worth showing, the rest one click away.</p>
+        </div>
+        <div class="shot"><img data-par src="assets/row-horizon-1300.webp" alt="A soft horizon, the camera moving" loading="lazy"></div>
+      </article>
+
+      <article class="row up">
+        <div class="txt">
+          <span class="mono n">Ø2 / Protect</span>
+          <h3>Rights travel on the frame</h3>
+          <p class="body">Licence and expiry live on the file, so an image that cannot run tells you before you send it. Read-only by default — nothing copied, nothing re-encoded, and no frame of yours trains a model.</p>
+        </div>
+        <div class="shot"><img data-par src="assets/row-sun-1300.webp" alt="Sun through trees, swept" loading="lazy"></div>
+      </article>
+
+      <article class="row up">
+        <div class="txt">
+          <span class="mono n">Ø3 / Keep up</span>
+          <h3>Twenty years, read in a weekend</h3>
+          <p class="body">The first pass on a hundred thousand frames takes about a day, and after that it keeps up in real time — wherever the work already lives. Drives, Dropbox, an old NAS in the corner.</p>
+        </div>
+        <div class="shot"><img data-par src="assets/row-red-1300.webp" alt="Red and green, drawn sideways" loading="lazy"></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 04 how it works — pinned ────────────────────────── -->
+<section class="scene" id="works">
+  <div class="scene-track" id="track">
+    <div class="scene-pin">
+      <div class="wrap" style="width:100%">
+        <div class="scene-grid">
+          <div>
+            <span class="mono" style="display:block;margin-bottom:clamp(40px,4.6vw,66px)">02 — How it works</span>
+            <div class="scene-copy" id="copy">
+              <div class="step on">
+                <span class="mono n">Step Ø1</span>
+                <span class="shot"><img src="assets/grass-1200.webp" alt="Pale grass, swept" loading="lazy"></span>
+                <h3>Point it at the work</h3>
+                <p class="body">Two clicks, read-only to start. Verso reads the last ninety days first, to learn your clients and your tone.</p>
+              </div>
+              <div class="step">
+                <span class="mono n">Step Ø2</span>
+                <span class="shot"><img src="assets/blossom-white-1200.webp" alt="White blossom over green, swept" loading="lazy"></span>
+                <h3>It learns your shorthand</h3>
+                <p class="body">The names you call clients, projects and looks become the words you search with.</p>
+              </div>
+              <div class="step">
+                <span class="mono n">Step Ø3</span>
+                <span class="shot"><img src="assets/blossom-pink-1200.webp" alt="Pink blossom over green, swept" loading="lazy"></span>
+                <h3>Ask in plain words</h3>
+                <p class="body">The grass going past the window, somewhere before the rebrand. That is enough to land on the frame.</p>
+              </div>
+            </div>
+            <div class="scene-rail" id="srail"><i><b></b></i><i><b></b></i><i><b></b></i></div>
+          </div>
+          <div class="scene-media" id="media">
+            <img src="assets/grass-1600.webp" alt="Pale grass, swept" loading="lazy">
+            <img src="assets/blossom-white-1600.webp" alt="White blossom over green, swept" loading="lazy">
+            <img src="assets/blossom-pink-1600.webp" alt="Pink blossom over green, swept" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 05 search ───────────────────────────────────────── -->
+<section class="find" id="find">
+  <div class="wrap">
+    <div style="max-width:760px">
+      <span class="mono up" style="display:block;margin-bottom:22px">03 — Search</span>
+      <h2>
+        <span class="rise"><span>Ask for it the way</span></span>
+        <span class="rise late"><span>you remember it</span></span>
+      </h2>
+      <p class="lead up l2" style="margin-top:26px">No file names, no keyword schema to keep up. Describe the frame and Verso ranks by the sentence it wrote.</p>
+    </div>
+    <div class="field up l1">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+      <span class="q" id="q"></span><i class="caret"></i>
+    </div>
+    <div class="hits" id="hits">
+      <article class="hit">
+        <img src="assets/dusk-700.webp" alt="A soft horizon just after sunset" loading="lazy">
+        <div class="m"><b>VRS_1641</b><span>0.96</span></div>
+      </article>
+      <article class="hit">
+        <img src="assets/foliage-700.webp" alt="Green foliage, the camera still moving" loading="lazy">
+        <div class="m"><b>VRS_0908</b><span>0.94</span></div>
+      </article>
+      <article class="hit">
+        <img src="assets/brown-700.webp" alt="Warm brown, nothing sharp in it" loading="lazy">
+        <div class="m"><b>VRS_2308</b><span>0.91</span></div>
+      </article>
+      <article class="hit">
+        <img src="assets/deep-green-700.webp" alt="Deep green, almost nothing in focus" loading="lazy">
+        <div class="m"><b>VRS_0441</b><span>0.88</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 06 what it wrote ──────────────────────────────────── -->
+<section class="wrote" id="wrote">
+  <div class="wrap">
+    <div class="wrote-head">
+      <span class="mono up">04 — What it wrote</span>
+      <h2>
+        <span class="rise"><span>The file was called</span></span>
+        <span class="rise late"><span><em>_DSC4471.NEF</em></span></span>
+      </h2>
+      <p class="lead up l2">Here is what it is called now. Every line below was written by Verso, on the frame beside it, without anyone opening the folder.</p>
+    </div>
+
+    <div class="wrote-list">
+      <div class="wr up">
+        <img class="t" src="assets/grass-200.webp" alt="Pale grass, swept" loading="lazy">
+        <span class="f">_DSC4471.NEF</span>
+        <span class="s">Pale grass going past the window, late afternoon — Kvist, day two.</span>
+      </div>
+      <div class="wr up">
+        <img class="t" src="assets/blossom-white-200.webp" alt="White blossom over green" loading="lazy">
+        <span class="f">IMG_0098.CR3</span>
+        <span class="s">White blossom smeared across green, the camera still moving.</span>
+      </div>
+      <div class="wr up">
+        <img class="t" src="assets/blossom-pink-200.webp" alt="Pink blossom over green" loading="lazy">
+        <span class="f">A7R_11204.ARW</span>
+        <span class="s">Pink blossom against deep green, shot wide open on the move.</span>
+      </div>
+      <div class="wr up">
+        <img class="t" src="assets/dusk-200.webp" alt="A soft horizon" loading="lazy">
+        <span class="f">SCAN_031.TIF</span>
+        <span class="s">A soft horizon just after sunset, almost no detail left in it.</span>
+      </div>
+      <div class="wr wr-live up">
+        <img class="t" src="assets/foliage-200.webp" alt="Green foliage, moving" loading="lazy">
+        <span class="f">_DSC4482.NEF</span>
+        <span class="s"><span id="wq"></span><i class="caret"></i></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 the figure ───────────────────────────────────── -->
+<section class="figure-scene" id="figure">
+  <div class="drift" id="drift">
+    <div class="d d1" data-speed="-150" data-x="-26" data-rot="-5"><span class="shot"><img src="assets/grass-440.webp" alt="" loading="lazy"></span></div>
+    <div class="d d2" data-speed="-260" data-x="18" data-rot="3"><span class="chip ok"><i></i>VRS_1641 · described</span></div>
+    <div class="d d3" data-speed="-96" data-x="-14" data-rot="4"><span class="shot"><img src="assets/blossom-pink-380.webp" alt="" loading="lazy"></span></div>
+    <div class="d d4" data-speed="-196" data-x="24" data-rot="5"><span class="shot"><img src="assets/row-sun-460.webp" alt="" loading="lazy"></span></div>
+    <div class="d d5" data-speed="-310" data-x="-20" data-rot="-4"><span class="chip"><i></i>1,846 read this hour</span></div>
+    <div class="d d6" data-speed="-118" data-x="16" data-rot="-6"><span class="shot"><img src="assets/blossom-white-420.webp" alt="" loading="lazy"></span></div>
+  </div>
+  <div class="wrap">
+    <div class="fig-h">
+      <b data-count="96" data-suffix="%">0%</b>
+      <span class="up l1">of a first pass finishes without anyone opening a folder</span>
+    </div>
+  </div>
+</section>
+
+<!-- 07 the quote ────────────────────────────────────── -->
+<section style="padding:0">
+  <div class="plate">
+    <img data-par src="assets/dusk-2000.webp" alt="A soft horizon just after sunset" loading="lazy">
+    <div class="in">
+      <p class="ser" style="font-size:clamp(1.6rem,3vw,3rem);line-height:1.1">“Twenty years of shoots are searchable now. I find a frame in seconds.”</p>
+      <p class="who mono">Marit Halvorsen — Studio director, Nordlys</p>
+    </div>
+  </div>
+</section>
+
+<!-- 08 faq ──────────────────────────────────────────── -->
+<section id="faq">
+  <div class="wrap">
+    <div style="max-width:760px;margin:0 auto;text-align:center">
+      <span class="mono up" style="display:block;margin-bottom:22px">05 — Questions</span>
+      <h2><span class="rise"><span>The small print</span></span></h2>
+    </div>
+    <div class="faq up l1">
+      <div class="qa">
+        <button type="button">Does Verso move or re-encode my files?<span class="ico"></span></button>
+        <div class="a"><p>No. It reads your originals where they sit and stores only the index. Nothing is copied to our servers unless you turn on backup.</p></div>
+      </div>
+      <div class="qa">
+        <button type="button">How large an archive can it handle?<span class="ico"></span></button>
+        <div class="a"><p>Studios run it across libraries of several million frames. The first pass on 100,000 images takes about a day, then it keeps up in real time.</p></div>
+      </div>
+      <div class="qa">
+        <button type="button">What about RAW and video?<span class="ico"></span></button>
+        <div class="a"><p>RAW from every current body, plus PSD, TIFF and ProRes. Video is indexed shot by shot, so a phrase lands on the second it happens.</p></div>
+      </div>
+      <div class="qa">
+        <button type="button">Can my clients search it too?<span class="ico"></span></button>
+        <div class="a"><p>Yes, through shared collections you control. They see only what you publish, with expiry dates and watermarks if you want them.</p></div>
+      </div>
+      <div class="qa">
+        <button type="button">Is my work used to train models?<span class="ico"></span></button>
+        <div class="a"><p>Never. Your images are indexed for you alone, and deleting your account removes the index within thirty days.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 09 the close ───────────────────────────────────────────────────
+     Mobbin's own library is login-walled, so this is drawn from the sites
+     it catalogues. The move the good ones share is that the closing section
+     is the product DOING ITS JOB one last time, not a pitch. Verso's first
+     step is "point it at the work", so the CTA is a real drop target: give
+     it a folder (or just hover) and it describes a frame on the spot. ──── -->
+<section class="end" id="access">
+  <div class="wrap end-in">
+    <span class="mono up">Now onboarding · four studios this month</span>
+    <h2 class="up l1">Point it at the work.</h2>
+    <p class="lead up l2">Two clicks, read-only to start. Drop a folder below — or just hover it — and watch Verso describe the first frame it finds.</p>
+
+    <div class="drop up l3" id="drop" tabindex="0" role="button" aria-label="Try Verso on a folder of frames">
+      <div class="drop-idle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 7.6A2.6 2.6 0 0 1 5.6 5h3.1l1.7 2.2h8A2.6 2.6 0 0 1 21 9.8v7.6A2.6 2.6 0 0 1 18.4 20H5.6A2.6 2.6 0 0 1 3 17.4Z"/>
+          <path d="M12 10.6v5.2M9.6 13.2 12 10.6l2.4 2.6"/>
+        </svg>
+        <span class="drop-say">Drop a folder of frames</span>
+        <span class="mono drop-hint">read-only · nothing leaves your machine</span>
+      </div>
+      <div class="drop-live" aria-hidden="true">
+        <img id="dropshot" src="assets/grass-200.webp" alt="">
+        <span class="drop-meta">
+          <b class="mono" id="dropname">_DSC4471.NEF</b>
+          <s id="dropline"></s><i class="caret"></i>
+        </span>
+      </div>
+    </div>
+
+    <form class="bigfield up l3" onsubmit="return false">
+      <input type="email" placeholder="you@studio.com" aria-label="Your email" required>
+      <button type="submit">Get started
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+    </form>
+    <p class="mono end-note up l3">No card · first pass free to 25,000 frames</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fg">
+      <div>
+        <a class="fmark" href="#top">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="3.3" fill="currentColor"/></svg>
+          Verso
+        </a>
+        <p class="body" style="max-width:32ch">Archive intelligence for studios that keep their own work.</p>
+      </div>
+      <div><h4 class="mono">Product</h4><ul>
+        <li><a href="#find">Search</a></li><li><a href="#does">What it does</a></li>
+        <li><a href="#works">How it works</a></li><li><a href="#access">Pricing</a></li>
+      </ul></div>
+      <div><h4 class="mono">Company</h4><ul>
+        <li><a href="#top">About</a></li><li><a href="#top">Careers</a></li><li><a href="#top">Journal</a></li>
+      </ul></div>
+      <div><h4 class="mono">Contact</h4><ul>
+        <li><a href="mailto:hello@verso.example">hello@verso.example</a></li>
+        <li><a href="#top">Support</a></li><li><a href="#faq">FAQ</a></li>
+      </ul></div>
+    </div>
+    <div class="fbot mono"><span>© 2026 Verso Labs</span><span>Privacy · Terms</span></div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="script.js" defer></script>
+
+</body>
+</html>
