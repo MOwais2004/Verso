@@ -1,5 +1,10 @@
 # Verso
 
+Live: https://mowais2004.github.io/Verso/
+
+https://github.com/user-attachments/assets/c39a08d6-797c-445e-946e-b590d5bcb9d1
+
+
 A free editorial landing page template, part of our free template series. The demo is a marketing page for Verso, a fictional product that writes a sentence onto every photo in a photographer's archive. Swap in your own copy and pictures and it's yours.
 
 Plain HTML, CSS and JavaScript. No framework, no build step, no package manager.
